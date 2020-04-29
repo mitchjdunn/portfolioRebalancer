@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-rebalancer",
+  "version": "0.0.1",
+  "description": "A tool to facilitate portfolio rebalancing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchjdunn/portfolioRebalancer.git"
+  },
+  "author": "Mitchy Mitch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchjdunn/portfolioRebalancer/issues"
+  },
+  "homepage": "https://github.com/mitchjdunn/portfolioRebalancer#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.2.1",
+    "jquery": "^3.5.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

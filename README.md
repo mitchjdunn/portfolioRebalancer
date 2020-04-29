@@ -4,39 +4,27 @@ Releave the tedious task of rebalancing a portfolio with this application.  This
 
 ## Getting Started
 
-TODO
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-TODO
-
-What things you need to install the software and how to install them
-
 ```
-Give examples
+make
+npm
+webserver
 ```
 
 ### Installing
 
-TODO
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+```
+make deps
 
 ```
-Give the example
-```
 
-And repeat
+### Running
 
-```
-until finished
-```
+Have a web server serving static content from `build/` dir.
+Run `make` to bundle all the source code
+Run `make dev-live` to rebuild after edits.
 
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
