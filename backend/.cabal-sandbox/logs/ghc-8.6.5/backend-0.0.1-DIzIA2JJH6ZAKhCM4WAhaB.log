@@ -1,0 +1,46 @@
+cabal: Entering directory '.'
+Configuring backend-0.0.1...
+Preprocessing executable 'backend' for backend-0.0.1..
+Building executable 'backend' for backend-0.0.1..
+[1 of 1] Compiling Main             ( src/Main.hs, dist/dist-sandbox-4bf9fd06/build/backend/backend-tmp/Main.o )
+
+src/Main.hs:10:9: error:
+    • Couldn't match expected type ‘[Char]
+                                    -> Web.Scotty.Internal.Types.ActionT
+                                         text-1.2.3.1:Data.Text.Internal.Lazy.Text IO ()’
+                  with actual type ‘Web.Scotty.Internal.Types.ActionT
+                                      text-1.2.3.1:Data.Text.Internal.Lazy.Text IO ()’
+    • The function ‘html’ is applied to two arguments,
+      but its type ‘text-1.2.3.1:Data.Text.Internal.Lazy.Text
+                    -> Web.Scotty.Internal.Types.ActionT
+                         text-1.2.3.1:Data.Text.Internal.Lazy.Text IO ()’
+      has only one
+      In a stmt of a 'do' block:
+        html
+          readFile "/home/mitch/git/portfolioRebalancer/build/index.html"
+      In the second argument of ‘($)’, namely
+        ‘do status status200
+            setHeader "Testing" "123"
+            html
+              readFile "/home/mitch/git/portfolioRebalancer/build/index.html"’
+   |
+10 |         html readFile "/home/mitch/git/portfolioRebalancer/build/index.html"
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/Main.hs:10:14: error:
+    • Couldn't match expected type ‘text-1.2.3.1:Data.Text.Internal.Lazy.Text’
+                  with actual type ‘FilePath -> IO String’
+    • Probable cause: ‘readFile’ is applied to too few arguments
+      In the first argument of ‘html’, namely ‘readFile’
+      In a stmt of a 'do' block:
+        html
+          readFile "/home/mitch/git/portfolioRebalancer/build/index.html"
+      In the second argument of ‘($)’, namely
+        ‘do status status200
+            setHeader "Testing" "123"
+            html
+              readFile "/home/mitch/git/portfolioRebalancer/build/index.html"’
+   |
+10 |         html readFile "/home/mitch/git/portfolioRebalancer/build/index.html"
+   |              ^^^^^^^^
+cabal: Leaving directory '.'

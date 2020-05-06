@@ -1,0 +1,11 @@
+cabal: Entering directory '/tmp/cabal-tmp-4335/regex-base-0.94.0.0'
+Configuring regex-base-0.94.0.0...
+Preprocessing library for regex-base-0.94.0.0..
+Building library for regex-base-0.94.0.0..
+[1 of 5] Compiling Paths_regex_base ( dist/dist-sandbox-4bf9fd06/build/autogen/Paths_regex_base.hs, dist/dist-sandbox-4bf9fd06/build/Paths_regex_base.o )
+[2 of 5] Compiling Text.Regex.Base.RegexLike ( src/Text/Regex/Base/RegexLike.hs, dist/dist-sandbox-4bf9fd06/build/Text/Regex/Base/RegexLike.o )
+[3 of 5] Compiling Text.Regex.Base.Context ( src/Text/Regex/Base/Context.hs, dist/dist-sandbox-4bf9fd06/build/Text/Regex/Base/Context.o )
+[4 of 5] Compiling Text.Regex.Base  ( src/Text/Regex/Base.hs, dist/dist-sandbox-4bf9fd06/build/Text/Regex/Base.o )
+[5 of 5] Compiling Text.Regex.Base.Impl ( src/Text/Regex/Base/Impl.hs, dist/dist-sandbox-4bf9fd06/build/Text/Regex/Base/Impl.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/regex-base-0.94.0.0-541xQVwwNRiBGjsNKmOPoy
+cabal: Leaving directory '/tmp/cabal-tmp-4335/regex-base-0.94.0.0'

@@ -1,0 +1,11 @@
+cabal: Entering directory '/tmp/cabal-tmp-4335/base64-bytestring-1.1.0.0'
+Configuring base64-bytestring-1.1.0.0...
+Preprocessing library for base64-bytestring-1.1.0.0..
+Building library for base64-bytestring-1.1.0.0..
+[1 of 5] Compiling Data.ByteString.Base64.Internal ( Data/ByteString/Base64/Internal.hs, dist/dist-sandbox-4bf9fd06/build/Data/ByteString/Base64/Internal.o )
+[2 of 5] Compiling Data.ByteString.Base64 ( Data/ByteString/Base64.hs, dist/dist-sandbox-4bf9fd06/build/Data/ByteString/Base64.o )
+[3 of 5] Compiling Data.ByteString.Base64.Lazy ( Data/ByteString/Base64/Lazy.hs, dist/dist-sandbox-4bf9fd06/build/Data/ByteString/Base64/Lazy.o )
+[4 of 5] Compiling Data.ByteString.Base64.URL ( Data/ByteString/Base64/URL.hs, dist/dist-sandbox-4bf9fd06/build/Data/ByteString/Base64/URL.o )
+[5 of 5] Compiling Data.ByteString.Base64.URL.Lazy ( Data/ByteString/Base64/URL/Lazy.hs, dist/dist-sandbox-4bf9fd06/build/Data/ByteString/Base64/URL/Lazy.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/base64-bytestring-1.1.0.0-7DmD5O3spcTCUGpnFTUzgA
+cabal: Leaving directory '/tmp/cabal-tmp-4335/base64-bytestring-1.1.0.0'

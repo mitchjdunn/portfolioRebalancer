@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4331/byteorder-1.0.4'
+Configuring byteorder-1.0.4...
+Preprocessing library for byteorder-1.0.4..
+Building library for byteorder-1.0.4..
+[1 of 1] Compiling System.ByteOrder ( System/ByteOrder.hs, dist/dist-sandbox-4bf9fd06/build/System/ByteOrder.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/byteorder-1.0.4-IVStE0plZAH4UpHo5zwztw
+cabal: Leaving directory '/tmp/cabal-tmp-4331/byteorder-1.0.4'

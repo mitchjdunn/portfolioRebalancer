@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4338/semigroups-0.19.1'
+Configuring semigroups-0.19.1...
+Preprocessing library for semigroups-0.19.1..
+Building library for semigroups-0.19.1..
+[1 of 1] Compiling Data.Semigroup.Generic ( src/Data/Semigroup/Generic.hs, dist/dist-sandbox-4bf9fd06/build/Data/Semigroup/Generic.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/semigroups-0.19.1-KNp79Ra3CyFJmGiL4277kF
+cabal: Leaving directory '/tmp/cabal-tmp-4338/semigroups-0.19.1'

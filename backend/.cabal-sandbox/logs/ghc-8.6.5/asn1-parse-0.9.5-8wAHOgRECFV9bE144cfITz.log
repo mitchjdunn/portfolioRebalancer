@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4331/asn1-parse-0.9.5'
+Configuring asn1-parse-0.9.5...
+Preprocessing library for asn1-parse-0.9.5..
+Building library for asn1-parse-0.9.5..
+[1 of 1] Compiling Data.ASN1.Parse  ( Data/ASN1/Parse.hs, dist/dist-sandbox-4bf9fd06/build/Data/ASN1/Parse.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/asn1-parse-0.9.5-8wAHOgRECFV9bE144cfITz
+cabal: Leaving directory '/tmp/cabal-tmp-4331/asn1-parse-0.9.5'

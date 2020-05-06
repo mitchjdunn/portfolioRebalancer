@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4338/network-byte-order-0.1.4.0'
+Configuring network-byte-order-0.1.4.0...
+Preprocessing library for network-byte-order-0.1.4.0..
+Building library for network-byte-order-0.1.4.0..
+[1 of 1] Compiling Network.ByteOrder ( Network/ByteOrder.hs, dist/dist-sandbox-4bf9fd06/build/Network/ByteOrder.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/network-byte-order-0.1.4.0-HmAx2PIOSb3GswBwKfOd1d
+cabal: Leaving directory '/tmp/cabal-tmp-4338/network-byte-order-0.1.4.0'

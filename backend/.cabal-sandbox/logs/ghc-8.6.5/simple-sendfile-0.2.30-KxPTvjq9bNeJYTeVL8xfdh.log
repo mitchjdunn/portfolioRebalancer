@@ -1,0 +1,10 @@
+cabal: Entering directory '/tmp/cabal-tmp-4333/simple-sendfile-0.2.30'
+Configuring simple-sendfile-0.2.30...
+Preprocessing library for simple-sendfile-0.2.30..
+Building library for simple-sendfile-0.2.30..
+[1 of 4] Compiling Network.Sendfile.Types ( Network/Sendfile/Types.hs, dist/dist-sandbox-4bf9fd06/build/Network/Sendfile/Types.o )
+[2 of 4] Compiling Network.Sendfile.Linux ( dist/dist-sandbox-4bf9fd06/build/Network/Sendfile/Linux.hs, dist/dist-sandbox-4bf9fd06/build/Network/Sendfile/Linux.o )
+[3 of 4] Compiling Network.Sendfile ( Network/Sendfile.hs, dist/dist-sandbox-4bf9fd06/build/Network/Sendfile.o )
+[4 of 4] Compiling System.Linux.Sendfile ( System/Linux/Sendfile.hs, dist/dist-sandbox-4bf9fd06/build/System/Linux/Sendfile.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/simple-sendfile-0.2.30-KxPTvjq9bNeJYTeVL8xfdh
+cabal: Leaving directory '/tmp/cabal-tmp-4333/simple-sendfile-0.2.30'

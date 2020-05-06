@@ -1,0 +1,15 @@
+cabal: Entering directory '/tmp/cabal-tmp-4331/iproute-1.7.9'
+Configuring iproute-1.7.9...
+Preprocessing library for iproute-1.7.9..
+Building library for iproute-1.7.9..
+[1 of 9] Compiling Data.IP.Addr     ( Data/IP/Addr.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Addr.o )
+[2 of 9] Compiling Data.IP.Builder  ( Data/IP/Builder.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Builder.o )
+[3 of 9] Compiling Data.IP.Mask     ( Data/IP/Mask.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Mask.o )
+[4 of 9] Compiling Data.IP.Range    ( Data/IP/Range.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Range.o )
+[5 of 9] Compiling Data.IP.Op       ( Data/IP/Op.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Op.o )
+[6 of 9] Compiling Data.IP.Internal ( Data/IP/Internal.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/Internal.o )
+[7 of 9] Compiling Data.IP          ( Data/IP.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP.o )
+[8 of 9] Compiling Data.IP.RouteTable.Internal ( Data/IP/RouteTable/Internal.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/RouteTable/Internal.o )
+[9 of 9] Compiling Data.IP.RouteTable ( Data/IP/RouteTable.hs, dist/dist-sandbox-4bf9fd06/build/Data/IP/RouteTable.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/iproute-1.7.9-HCTfkdvYdQ8A15ye5EgnEn
+cabal: Leaving directory '/tmp/cabal-tmp-4331/iproute-1.7.9'

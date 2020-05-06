@@ -1,0 +1,8 @@
+cabal: Entering directory '/tmp/cabal-tmp-4334/base-orphans-0.8.2'
+Configuring base-orphans-0.8.2...
+Preprocessing library for base-orphans-0.8.2..
+Building library for base-orphans-0.8.2..
+[1 of 2] Compiling Data.Orphans.Prelude ( src/Data/Orphans/Prelude.hs, dist/dist-sandbox-4bf9fd06/build/Data/Orphans/Prelude.o )
+[2 of 2] Compiling Data.Orphans     ( src/Data/Orphans.hs, dist/dist-sandbox-4bf9fd06/build/Data/Orphans.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/base-orphans-0.8.2-3ZQM2pxPHbTALAIaG3rSz1
+cabal: Leaving directory '/tmp/cabal-tmp-4334/base-orphans-0.8.2'

@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4333/cabal-doctest-1.0.8'
+Configuring cabal-doctest-1.0.8...
+Preprocessing library for cabal-doctest-1.0.8..
+Building library for cabal-doctest-1.0.8..
+[1 of 1] Compiling Distribution.Extra.Doctest ( src/Distribution/Extra/Doctest.hs, dist/dist-sandbox-4bf9fd06/build/Distribution/Extra/Doctest.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/cabal-doctest-1.0.8-LWonQ7pRycVCkqoGNLFtQk
+cabal: Leaving directory '/tmp/cabal-tmp-4333/cabal-doctest-1.0.8'

@@ -1,0 +1,7 @@
+cabal: Entering directory '/tmp/cabal-tmp-4336/cookie-0.4.5'
+Configuring cookie-0.4.5...
+Preprocessing library for cookie-0.4.5..
+Building library for cookie-0.4.5..
+[1 of 1] Compiling Web.Cookie       ( Web/Cookie.hs, dist/dist-sandbox-4bf9fd06/build/Web/Cookie.o )
+Installing library in /home/mitch/git/portfolioRebalancer/backend/.cabal-sandbox/lib/x86_64-linux-ghc-8.6.5/cookie-0.4.5-FViOMgoPVhL3PprTfOcJF2
+cabal: Leaving directory '/tmp/cabal-tmp-4336/cookie-0.4.5'
