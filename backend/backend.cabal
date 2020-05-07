@@ -31,5 +31,6 @@ executable backend
   build-depends:       base >=4.12 && <4.13
                 , scotty
                 , http-types
+                , aeson
   hs-source-dirs:      src
   default-language:    Haskell2010

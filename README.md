@@ -9,7 +9,8 @@ Releave the tedious task of rebalancing a portfolio with this application.  This
 ```
 make
 npm
-webserver
+haskell
+cabal
 ```
 
 ### Installing
@@ -19,11 +20,18 @@ make deps
 
 ```
 
+Also, install haskell deps in backend dir
+
+```
+cd backend
+cabal install
+```
+
 ### Running
 
-Have a web server serving static content from `build/` dir.
 Run `make` to bundle all the source code
 Run `make dev-live` to rebuild after edits.
+run `cd backend; cabal run` to start haskell web server
 
 
 ## Running the tests

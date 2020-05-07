@@ -89,7 +89,7 @@ function DetailsTab () {
     //  Call /portfolio/snapshot
     //      return JSON
     //          {
-    //              snapshot: [
+    //              assetSnapshots: [
     //                  {
     //                    ticker: $ticker
     //                    quantity: $quantity
