@@ -28,8 +28,6 @@ function Ui () {
         .css("border-radius", "3px")
         .css("overflow", "hidden")
         .css("box-shadow", shadows.card1)
-        .css("max-width", "26rem")
-        .css("max-height", "40rem")
         .css("width", "100%")
         .css("height", "100%")
         .append($view)
@@ -87,6 +85,23 @@ function DetailsTab () {
     const $detailsTab = $("<div>")
         .text("Details Tab")
 
+    // TODO
+    //  Call /portfolio/snapshot
+    //      return JSON
+    //          {
+    //              snapshot: [
+    //                  {
+    //                    ticker: $ticker
+    //                    quantity: $quantity
+    //                    tickerValue: $tickerValue
+    //                    targetAllocationPercent: $targetAllocationPercent
+    //                    currentAllocationPercent: $currentAllocationPercent
+    //                  }, ...
+    //              ]
+    //          }
+    // create table as
+    //  |ticker|quantity|value|current allocation (+/- actuatl)|
+
     return $detailsTab
 }
 function RebalanceTab () {
@@ -94,12 +109,47 @@ function RebalanceTab () {
     const $rebalanceTab = $("<div>")
         .text("Rebalance Tab")
 
+    // TODO
+    //  get /portfolio/snapshot
+    //
+    //  determine sell/buy quantity for each ticker to establish
+    //     target allocation (as close as possible assuming integer quanities)
+    //
+    //  adjust quantities based on number entered in box
+    //
+    //  on submit post /portfolio/rebalance
+    //      json: {
+    //          [
+    //          {
+    //              ticker: $ticker,
+    //              quantity: $quantity
+    //          }
+    //          ]
+    //      }
+
     return $rebalanceTab
 }
 function EditTab () {
 
     const $editTab = $("<div>")
         .text("Edit Tab")
+
+    // TODO
+    // get /portfolio/snapshot
+    //
+    // display table
+    // |ticker|targetAllocation|
+    // target allocation should be editable
+    //
+    // submit on click ( with total as 100% -- backend validation also )
+    //
+    // post /portfolio/reallocate
+    //      json {
+    //          [
+    //              ticker: $ticker
+    //              targetAllocation: $targetAllocation
+    //          ]
+    //      }
 
     return $editTab
 }

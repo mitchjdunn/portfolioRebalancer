@@ -8,9 +8,9 @@ module.exports = {
         console.log(pages)
         const viewId = $view.prop("id")
         const storageKey = `view-${viewId}`
-        // what is local storage
+        //  while messing around with viewID, incorrect page key can be stored in web browser.
+        //      Temp fix Ctrl-F5 will clear cache on reload
         const pageKey = (tryLocal && localStorage.getItem(storageKey)) || requestedPageKey
-        console.log(pageKey)
         localStorage.setItem(storageKey, pageKey)
         $view.children().detach()
         $view.append(pages[pageKey].view)
