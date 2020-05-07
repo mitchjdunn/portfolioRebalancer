@@ -13,7 +13,7 @@ main = scotty 3000 $ do
     get "/:fileName" $ do
         status status200
         fileName <- param "fileName"
-        file "/home/mitch/git/portfolioRebalancer/build/" ++ fileName
+        file $ "/home/mitch/git/portfolioRebalancer/build/" ++ fileName
         -- haskell dont like this ^
     delete "/" $ do        -- handle get request on root
         text "this was a delete request!"
