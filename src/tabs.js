@@ -4,7 +4,6 @@ const { mkToolbarBase, colors } = require("./common.js")
 module.exports = {
 
     Tabs (pages) {
-        console.log(pages)
         const $tabs = mkToolbarBase()
             .css("justify-content", "stretch")
             .css("align-items", "stretch")

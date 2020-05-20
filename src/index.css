@@ -12,3 +12,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+canvas {
+
+    height: 20%;
+    width: 20%;
+}

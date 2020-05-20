@@ -1,10 +1,12 @@
 require("./index.css")
+
 require("../node_modules/font-awesome/css/font-awesome.min.css")
 
-// TODO why $
 const $ = require("jquery")
+const d3 = require("d3-scale-chromatic")
 
 const { View } = require("./view.js")
+const { PieChart } = require("./chart.js")
 const { Tabs } = require("./tabs.js")
 
 const {
@@ -80,35 +82,68 @@ function MainPage () {
     return $mainPage
 
 }
+
 function DetailsTab () {
 
-    const $detailsTab = $("<div>")
-        .text("Details Tab")
+    const $pieChart = $("<canvas>")
+        // .prop("class", "pieChart")
+    const $detailsTab = $("<div>").append($pieChart)
 
-    // TODO
-    //  Call /portfolio/snapshot
-    //      return JSON
-    //          {
-    //              assetSnapshots: [
-    //                  {
-    //                    ticker: $ticker
-    //                    quantity: $quantity
-    //                    tickerValue: $tickerValue
-    //                    targetAllocationPercent: $targetAllocationPercent
-    //                    currentAllocationPercent: $currentAllocationPercent
-    //                  }, ...
-    //              ]
-    //          }
-    // create table as
     //  |ticker|quantity|value|current allocation (+/- actuatl)|
+    fetch("/portfolio/snapshot")
+        .then((resp) => resp.json())
+        .then(({ assetSnapshots }) => {
+            PieChart($pieChart, data = assetSnapshots.map(a => a.quantity * a.tickerValue)
+                ,assetSnapshots.map((_, i) => d3.interpolateViridis(i / (assetSnapshots.length - 1)))
+                ,assetSnapshots.map(a => a.ticker)
+                ,label = "Ticker Amounts")
+        })
 
+    // JSON: {
+    //    assetSnapshots: [
+    //        {
+    //          ticker: $ticker
+    //          quantity: $quantity
+    //          tickerValue: $tickerValue
+    //          targetAllocationPercent: $targetAllocationPercent
+    //          currentAllocationPercent: $currentAllocationPercent
+    //        }, ...
+    //    ]
+    //}
+
+    //  TODO
+    //  Add support for multiple portfolios
     return $detailsTab
 }
+
 function RebalanceTab () {
 
-    const $rebalanceTab = $("<div>")
-        .text("Rebalance Tab")
+    const $dollarcontributionLabel = $("<label>")
+        .text("How much will you be contributing: ")
+        .prop("for", "dollarContribution") // WHAT FOR
+    const $dollarContribution = $("<input>")
+        .prop("type", "text")
+        .prop("id", "dollarContribution")
 
+
+    const $userInput = $("<span>") // TODO Style this pls
+        .append($dollarcontributionLabel)
+        .append($dollarContribution)
+    const $pieChart = $("<canvas>")
+    const $rebalanceTab = $("<div>").append($userInput).append($pieChart)
+
+    fetch("/portfolio/snapshot")
+        .then((resp) => resp.json())
+        .then(({ assetSnapshots }) => {
+            PieChart($pieChart, data = assetSnapshots.map(a => a.quantity * a.tickerValue)
+                ,assetSnapshots.map((_, i) => d3.interpolateViridis(i / (assetSnapshots.length - 1)))
+                ,assetSnapshots.map(a => a.ticker)
+                ,label = "Ticker Amounts")
+            })
+
+    $dollarContribution.on("input", () => {
+        console.log($dollarContribution.val())
+    })
     // TODO
     //  get /portfolio/snapshot
     //
@@ -129,6 +164,7 @@ function RebalanceTab () {
 
     return $rebalanceTab
 }
+
 function EditTab () {
 
     const $editTab = $("<div>")
