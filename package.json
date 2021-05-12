@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mitchjdunn/portfolioRebalancer#readme",
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs": "^0.3.24",
     "d3-scale-chromatic": "^1.5.0",
     "file-loader": "^6.0.0",
